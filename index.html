@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculater</title>
+	<meta charset="UTF=8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">  
+
+	    
+		.container{
+			height: 494px;
+			width:358px;
+			margin:auto;
+			margin-top: 100px;
+			border: 2px solid #fff;
+			background-color: #fff;
+			box-shadow: 2px 2px 5px 3px #6b6666;
+			border-radius: 4px;
+		}
+		input{
+			margin-top:5px;
+			margin-left: 5px;
+			padding: 15px;
+			width:110px;
+			font-size: 18px;
+			font-weight: bold;
+			border-radius: 3px;
+			border: none;
+		}
+		#out{
+			width: 88%;
+			border: none;
+			border-radius: 5px;
+			color: black;
+			font-size: 25px;
+			font-weight: bold;
+			text-align: right;
+		}
+		h2{
+			color: red;
+			font-weight: bold;
+			font-family: cursive;
+            text-align: center;
+		}
+	</style>
+</head>
+<body bgcolor="#f1efef">
+    
+	<div class="container">
+		<form name="form_1">
+			<h2>Calculater</h2>
+			<input type="text" name="output" placeholder="0" id="out"><br><br>
+            
+            <input type="button" name="btndel" value="Del" onclick="document.form_1.output.value=''">
+			<input type="button" name="btnclr" value="C" onclick="document.form_1.output.value=''">
+			<input type="button" name="btnplus" value="+" onclick="document.form_1.output.value+='+'" style="background-color: #20b2aa; color: #fff;"><br>
+			
+			<input type="button" name="btn" value="9" onclick="document.form_1.output.value+='9'">
+			<input type="button" name="btn8" value="8" onclick="document.form_1.output.value+='8'">
+			<input type="button" name="btnsub" value="-" onclick="document.form_1.output.value+='-'" style="background-color: #ffa500; color: #fff;"><br>
+
+			<input type="button" name="btn7" value="7" onclick="document.form_1.output.value+='7'">
+			<input type="button" name="btn6" value="6" onclick="document.form_1.output.value+='6'">
+			<input type="button" name="btndiv" value="/" onclick="document.form_1.output.value+='/'" style="background-color: #f08080; color: #fff;"><br>
+
+			<input type="button" name="btn5" value="5" onclick="document.form_1.output.value+='5'">
+			<input type="button" name="btn4" value="4" onclick="document.form_1.output.value+='4'">
+			<input type="button" name="btnmul" value="x" onclick="document.form_1.output.value+='*'" style="background-color: #768bd3; color: #fff;"><br>
+
+			<input type="button" name="btn3" value="3" onclick="document.form_1.output.value+='3'">
+			<input type="button" name="btn2" value="2" onclick="document.form_1.output.value+='2'">
+			<input type="button" name="btndot" value="." onclick="document.form_1.output.value+='.'" style="background-color: #445456; color: #fff;"><br>
+
+			<input type="button" name="btn1" value="1" onclick="document.form_1.output.value+='1'">
+			<input type="button" name="btn0" value="0" onclick="document.form_1.output.value+='0'">
+			<input type="button" name="btnequal" value="=" onclick="document.form_1.output.value=eval(document.form_1.output.value)" style="background-color: #6aea6e; color: #fff;">
+
+			
+		</form>
+		
+	</div>
+    
+</body>
+</html>
